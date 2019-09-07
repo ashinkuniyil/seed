@@ -8,6 +8,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatListModule} from '@angular/material/list';
 import {LoginComponent} from './module/login/login.component'
 import { LayoutComponent } from './module/layout/layout.component';
 import { DashboardComponent } from './module/dashboard/dashboard.component';
@@ -24,7 +26,9 @@ import { DashboardComponent } from './module/dashboard/dashboard.component';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatRadioModule
+    MatRadioModule,
+    MatButtonToggleModule,
+    MatListModule
   ]
 })
 export class UniversalModule { }

@@ -1,0 +1,46 @@
+// bg style
+.bg-style {
+    &.def-grad-bg {
+        background: linear-gradient(to bottom right, $base-color, $base-color-grad-one);
+    }
+    &.def-bg {
+        background-color: $base-color;
+    }
+}
+
+// text style
+.text-style {
+    &.def-grad-clr {
+        color: linear-gradient(to bottom right, $base-color-grad-one, $base-color);
+    }
+    &.def-clr {
+        color: $base-color;
+    }
+    &.white-clr {
+        color: $white;
+    }
+    &.f-10 {
+        font-size: $fs-10;
+    }
+    &.f-12 {
+        font-size: $fs-12;
+    }
+    &.f-14 {
+        font-size: $fs-14;
+    }
+    &.f-16 {
+        font-size: $fs-16;
+    }
+    &.f-18 {
+        font-size: $fs-18;
+    }
+    &.f-20 {
+        font-size: $fs-20;
+    }
+    &.f-24 {
+        font-size: $fs-24;
+    }
+    &.f-32 {
+        font-size: $fs-32;
+    }
+}

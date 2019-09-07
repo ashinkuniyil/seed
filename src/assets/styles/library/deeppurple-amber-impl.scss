@@ -1,0 +1,55 @@
+@import "../variables";
+.mat-badge-content,
+.mat-button,
+.mat-fab,
+.mat-flat-button,
+.mat-icon-button,
+.mat-mini-fab,
+.mat-raised-button,
+.mat-stroked-button,
+.mat-button-toggle,
+.mat-card,
+.mat-checkbox,
+.mat-table,
+.mat-calendar,
+.mat-expansion-panel-header,
+.mat-form-field,
+.mat-menu-item,
+.mat-paginator,
+.mat-paginator-page-size .mat-select-trigger,
+.mat-radio-button,
+.mat-select,
+.mat-slide-toggle-content,
+.mat-slider-thumb-label-text,
+.mat-stepper-horizontal,
+.mat-stepper-vertical,
+.mat-tab-group,
+.mat-tab-label,
+.mat-tab-link,
+.mat-tooltip,
+.mat-list-item,
+.mat-list-option,
+.mat-list-base[dense] .mat-subheader,
+.mat-option,
+.mat-simple-snackbar,
+.mat-simple-snackbar-action,
+.mat-tree {
+    font-family: "Proxima Nova Regular", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.req-white {
+    .mat-form-field-label,
+    .mat-input-element {
+        color: $white;
+        caret-color: $white;
+    }
+    .mat-form-field.mat-focused .mat-form-field-ripple {
+        background-color: $white;
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-underline {
+        background-color: $white;
+    }
+    .mat-form-field.mat-focused .mat-form-field-label {
+        color: $white;
+    }
+}
