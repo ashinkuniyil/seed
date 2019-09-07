@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "AshinSeedProject": {
+        "EventPlanner": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/AshinSeedProject",
+                        "outputPath": "dist/EventPlanner",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "AshinSeedProject:build"
+                        "browserTarget": "EventPlanner:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "AshinSeedProject:build:production"
+                            "browserTarget": "EventPlanner:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "AshinSeedProject:build"
+                        "browserTarget": "EventPlanner:build"
                     }
                 },
                 "test": {
@@ -116,16 +116,16 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "AshinSeedProject:serve"
+                        "devServerTarget": "EventPlanner:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "AshinSeedProject:serve:production"
+                            "devServerTarget": "EventPlanner:serve:production"
                         }
                     }
                 }
             }
         }
     },
-    "defaultProject": "AshinSeedProject"
+    "defaultProject": "EventPlanner"
 }
