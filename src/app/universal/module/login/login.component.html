@@ -2647,7 +2647,7 @@
     <div class="container-padding flex-1 login-container">
         <div class="logo animated slideInUp delay-500ms"></div>
         <div class="flex-display flex-column flex-1 fh justify-space-between">
-            <div class="flex-container">
+            <div class="flex-container animated slideInUp delay-500ms">
                 <mat-list-item class="text-style white-clr m-t-20">
                     <h3>Happy Customers</h3>
                     <i class="fas fa-user-circle"></i>
@@ -2658,15 +2658,19 @@
                 </mat-list-item>
             </div>
             <div class="flex-container">
-                <form class="animated slideInUp delay-500ms m-b-20">
+                <form class="animated slideInUp delay-500ms m-b-20" autocomplete="off">
                     <mat-form-field class="fw">
-                        <input matInput placeholder="Enter Name">
-                        <button matSuffix mat-raised-button class="m-b-10">GET STARTED</button>
+                        <input matInput placeholder="Enter ypur mobile number" *ngIf="!otpTrigger">
+                        <button matSuffix mat-raised-button class="m-b-10" *ngIf="!otpTrigger" (click)="getStarted()">GET STARTED</button>
+                        <i matPrefix class="fas fa-long-arrow-alt-left text-style white-clr m-r-10" *ngIf="otpTrigger" (click)="otpTrigger=false"></i>
+                        <input matInput placeholder="OTP" *ngIf="otpTrigger" type="tel">
+                        <button matSuffix mat-button class="m-b-10 text-style white-clr" *ngIf="otpTrigger">Resend OTP</button>
                     </mat-form-field>
-                    <mat-button-toggle-group name="userType" aria-label="User Type" class="fw" value="customer">
+                    <mat-button-toggle-group name="userType" aria-label="User Type" class="fw" value="customer" *ngIf="!otpTrigger">
                         <mat-button-toggle value="customer" class="fw">CUSTOMER</mat-button-toggle>
                         <mat-button-toggle value="vendor" class="fw">VENDOR</mat-button-toggle>
                     </mat-button-toggle-group>
+                    <button mat-flat-button class="fw" *ngIf="otpTrigger" (click)="gotoDashBoard()">VERIFY</button>
                 </form>
             </div>
         </div>
