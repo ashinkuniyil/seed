@@ -13,7 +13,6 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   dataStore: DataStore;
-  otpTrigger: boolean = false;
   constructor(public router: Router, private http: HttpClient, private fb: FormBuilder, ) {
     this.dataStore = DataStore.getInstance();
     this.loginForm = this.fb.group({
@@ -21,9 +20,6 @@ export class LoginComponent implements OnInit {
       password: ['']
     });
 
-  }
-  getStarted(){
-    this.otpTrigger = true;
   }
   gotoDashBoard() {
     this.router.navigate(['/universal/view/dashboard']);
